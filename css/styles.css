@@ -4,8 +4,33 @@ body {
 }
 
 .container {
-    max-width: 1500px;
-    margin: 0 auto;
+    gap: 30px;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 150px);
+    gap: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1px;
+    border: 1px solid black;
+}
+
+.card img {
+    width: auto;
+    height: 150px;
+    object-fit: cover;
 }
 
 h1 {
