@@ -9,7 +9,7 @@ function retornarCardHTML(destino) {
     <div class="card-name">${destino.nombre}</div>
     <div class="card-price">${destino.precio}</div>
     <div class="card-button">
-    <button class="button button-outline button-add" id="${destino.id}" title="Click para elegir destino">+</button>
+    <button class="button button-outline button-add" id="${destino.id}" title="Click para elegir destino">Elegir</button>
     </div>
     </div>`
 }
