@@ -12,7 +12,7 @@ body {
     justify-content: center;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(1, 150px);
+    grid-template-rows: repeat(2, 150px);
 }
 
 .card {
@@ -22,7 +22,7 @@ body {
     padding: 1px;
     border: 1px solid black;
     border-radius: 5px;
-  }
+}
 
 .card img {
     width: auto;
