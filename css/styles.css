@@ -19,7 +19,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1px;
+    padding: 2px;
     border: 1px solid black;
     border-radius: 5px;
 }
@@ -28,6 +28,18 @@ body {
     width: auto;
     height: 150px;
     object-fit: cover;
+}
+
+.card-name, .card-price {
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco semitransparente */
+    padding: 5px; /* Espacio alrededor del texto */
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.card-name:hover, .card-price:hover {
+    transform: scale(1.1);
 }
 
 .button-add {
@@ -56,13 +68,15 @@ body {
 }
 
 h1 {
-    font-size: 50px;
+    font-family: 'Calibr';
+    font-size: 60px;
     text-align: center;
+    font-style: bold;
     margin-top: 2px;
 }
 
 p{
-    font-size: 22px;
+    font-size: 30px;
 }
 
 header {
