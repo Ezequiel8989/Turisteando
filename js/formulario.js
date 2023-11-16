@@ -1,4 +1,4 @@
-import destino from "./index.js" ;
+
 
 // Obtén una referencia al formulario
 const pantallaDestino = document.querySelector('form');
@@ -19,7 +19,7 @@ function recuperarDestino(){
 //     const fechaVuelo = document.getElementById('fecha_vuelo').value;
 
 //Realiza acciones con los datos (por ejemplo, muestra una alerta)
-alert(`¡Hola, ${nombre} ${apellido}! Tu vuelo está programado para el ${fechaVuelo}.`);
+//alert(`¡Hola, ${nombre} ${apellido}! Tu vuelo está programado para el ${fechaVuelo}.`);
 
 //     // Aquí puedes agregar más lógica según tus necesidades
 //     // Por ejemplo, enviar los datos al servidor o redirigir a otra página

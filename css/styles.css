@@ -70,11 +70,12 @@ body {
 }
 
 h1 {
-    font-family: 'Calibri';
-    font-size: 60px;
-    text-align: center;
-    font-style: bold;
-    margin-top: 2px;
+    font-size: 2.5rem;
+  font-family: 'Montserrat';
+  font-weight: normal;
+  color: #444;
+  text-align: center;
+  margin: 2rem 0;
 }
 
 p{
@@ -126,4 +127,18 @@ input:focus, textarea:focus {
 textarea {
     vertical-align: top;
     height: 5em;
+}
+ /* Estilos para el botón de "volver" */
+ .back-button {
+    background-color: #55a6a5;
+    color: white;
+    padding: 20px 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Estilos al pasar el cursor sobre el botón */
+.back-button:hover {
+    background-color: #3b7476 ;
 }

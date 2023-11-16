@@ -18,19 +18,13 @@ function retornarCardHTML(destino) {
     </div>`
 }
 
-
 function cargarPantallaDestino(destino) {
-    // const container = document.querySelector('.container')
-    //     const cardHTML = retornarCardHTML(destino);
-    //     container.innerHTML += cardHTML;
     location.href = 'formulario.html';
     pantallaDestino.destinoPrueba = destino;
-    pantallaDestino.recuperarDestino()
-
-    //pantallaDestino.recuperarDestino();
+    pantallaDestino.recuperarDestino();
 }
 
-//funcion para cargar los productos en la pagina
+//funcion para cargar los destinos en la pagina
 function CargarDestinos(array) {
     const container = document.querySelector('.container')
     array.forEach(destinos => {
@@ -49,9 +43,6 @@ const activarClickEnBotones = () => {
         }
     }
 };
-
-// Llama a la función para activar los clics en los botones
-
 
 //llamar a la funcion para cargar datos en la pagina
 CargarDestinos(destinos);
