@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module" src="/js/formulario.js"></script>
     <script type="module" src="/js/destinos.js"></script>
+    <script type="module" src="/js/index.js"></script>
     <link rel="stylesheet" href="css/styles.css">
     <title>Formulario de Vuelo</title>
 </head>
@@ -13,28 +14,37 @@
 <body>
     <a href="javascript:window.history.back();" class="back-button">Volver</a>
     <form>
-        <label for="apellido">Destino:</label>
+        <fieldset>
+            <legend>Informacion de Reserva</legend>
+            <br>
+            <label for="apellido">Destino:</label>
+            <br>
+            <input type="text" id="destino" name="destino" readonly>
+            <br>
+            <label for="apellido">Precio:</label>
+            <br>
+            <input type="text" id="precio" name="precio" readonly>
+            <br>
+        </fieldset>
         <p></p>
-        <input type="text" id="destino" name="destino">
-        <p></p>
-        <label for="apellido">Precio:</label>
-        <p></p>
-        <input type="text" id="precio" name="precio">
-        <p></p>
-        <label for="nombre">Nombre:</label>
-        <p></p>
-        <input type="text" id="nombre" name="nombre" required>
-        <p></p>
-        <label for="apellido">Apellido:</label>
-        <p></p>
-        <input type="text" id="apellido" name="apellido" required>
-        <p></p>
-        <label for="fecha_vuelo">Fecha de Reserva:</label>
-        <p></p>
-        <input type="date" id="fecha_vuelo" name="fecha_vuelo" required>
-        <p></p>
-        <input type="submit" value="Finalizar">
+        <fieldset>
+            <legend>Información del Pasajero</legend>
+            <br>
+            <label for="nombre">Nombre:</label>
+            <br>
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
+            <label for="apellido">Apellido:</label>
+            <br>
+            <input type="text" id="apellido" name="apellido" required>
+            <br>
+            <label for="fecha_vuelo">Fecha de Reserva:</label>
+            <br>
+            <input type="date" id="fecha_vuelo" name="fecha_vuelo" required>
+            <br>
+    </fieldset>
+        <br>
+        <input type="submit" value="Finalizar" name="Finalizar">
     </form>
 </body>
-
 </html>

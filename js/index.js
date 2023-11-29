@@ -1,13 +1,10 @@
 // se importa destinos al index.
-import pantallaDestino from "./formulario.js";
+
 import destinos from "./destinos.js";
-
-
-var destino = "";
 
 //funcion para retonar el HTML de una card
 function retornarCardHTML(destino) {
-    return `<div class=" card">
+    return `<div class= "card">
         <img src="${destino.imagen}" alt="${destino.nombre}"></div>
         <div class=" card-price">${destino.precio}</div>
         <div class=" card-name">${destino.nombre}</div>
@@ -18,10 +15,16 @@ function retornarCardHTML(destino) {
     </div>`
 }
 
-function cargarPantallaDestino(destino) {
+function cargarPantallaDestino(destinoId) {
+
+    // Obtén el destino seleccionado
+    const destinoSeleccionado = destinos[destinoId];
+
+    // Almacena los datos en localStorage
+    localStorage.setItem('destinoSeleccionado', JSON.stringify(destinoSeleccionado));
+
+    // Redirige al formulario
     location.href = 'formulario.html';
-    pantallaDestino.destinoPrueba = destino;
-    pantallaDestino.recuperarDestino();
 }
 
 //funcion para cargar los destinos en la pagina
