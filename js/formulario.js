@@ -7,4 +7,5 @@ function recuperarDestino() {
     document.getElementById('destino').value = destinoSeleccionado.nombre;
     document.getElementById('precio').value = destinoSeleccionado.precio;
 }
+
 export default recuperarDestino();

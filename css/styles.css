@@ -1,15 +1,18 @@
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-    background-color: #c3ddda; 
+    background: linear-gradient(to bottom, #033544c9, #1ac2eccb);
 }
 
 .container {
     gap: 10px;
-    display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
     }
 
 .card {
@@ -69,25 +72,27 @@ body {
 }
 
 h1 {
-    font-family: 'Calibri';
-    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     font-style: bold;
-    margin-top: 2px;
+    margin-top: 1px;
 }
 
 p{
     font-size: 30px;
-}
-
-header {
-    background-color: #55a6a3;
-    padding: 30px;
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
 }
 
+header h1 {
+    padding: 30px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 30;
+}
+
 main {
-    background-color: #3b7476;
     padding: 30px;
 }
 
@@ -95,6 +100,8 @@ footer {
     background-color: #163438;
     padding: 10px;
     text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
 }
 
 /* Estilos del formulario */
