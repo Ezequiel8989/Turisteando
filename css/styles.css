@@ -4,21 +4,25 @@ body {
 }
 
 .container {
+    display: grid;
+    grid-template-columns: repeat(
+            auto-fit,
+            minmax(
+                150px,
+                1fr
+            )
+        );
     gap: 10px;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    display: flex;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
     }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     padding: 2px;
     border: 1px solid black;
     border-radius: 5px;
@@ -28,7 +32,6 @@ body {
     width: auto;
     height: 150px;
     object-fit: cover;
-    
 }
 
 .card-name, .card-price {
@@ -37,8 +40,6 @@ body {
     border: 1px solid black;
     border-radius: 5px;
     text-align: center;
-    display: flex;
-
 }
 
 .card-name:hover, .card-price:hover {
@@ -116,15 +117,26 @@ form {
     border-radius: 1em;
 }
 
-/* Estilos para los campos del formulario (opcional) */
+input[type="text"],input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los campos del formulario */
 input, textarea {
     font: 1em sans-serif;
     width: 300px;
     box-sizing: border-box;
     border: 1px solid #999;
     text-align: center;
-    padding: 2px; /* Agrega un poco de espacio interno */
-    transition: border-color 0.3s; /* Transición suave para el cambio de color del borde */
+    padding: 2px;
+    transition: border-color 0.3s;
+}
+input[type="email"] {
+    width: 100%;
 }
 
 input:focus, textarea:focus {
@@ -140,8 +152,8 @@ textarea {
 .back-button {
     background-color: #55a6a5;
     color: white;
-    padding: 20px 10px;
-    border-radius: 6px;
+    padding: 5px 10px;
+    border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -149,26 +161,27 @@ textarea {
 /* Estilos al pasar el cursor sobre el botón */
 .back-button:hover {
     background-color: #3b7476 ;
+    
 }
 input[type="text"],
-        input[type="date"] {
-            width: 100%;
-            padding: 8px;
-            box-sizing: border-box;
-            border: 1px solid #999;
-            margin-bottom: 15px;
-        }
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    margin-bottom: 15px;
+}
 
-        input[type="submit"] {
-            background-color: #0a515abd;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 0.5em;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
+input[type="submit"] {
+    background-color: #0a515abd;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
 
-        input[type="submit"]:hover {
-            background-color: #00adb3;
-        }
+input[type="submit"]:hover {
+    background-color: #00adb3;
+}

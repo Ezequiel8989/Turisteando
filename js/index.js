@@ -45,8 +45,7 @@ const activarClickEnBotones = () => {
         }
     }
 };
-
 //llamar a la funcion para cargar datos en la pagina
 CargarDestinos(destinos);
 activarClickEnBotones();
-export default destino;
+export default destinos;
